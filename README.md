@@ -1,6 +1,6 @@
 # Clearcode coding challenges 
 Clearcode coding challenges 
-(submission by Oleksii Pilkevych)
+(submission by Oleksii Pilkevych).
 
 Please note that the results of Task 1 are different from the ones in the examples from the task description.
 
@@ -15,5 +15,5 @@ Whereas the script returns:
 * `battle([17,-3, 32, -24])` => "evens win" // 10001-11 vs 100000-11000, 2-2 vs 5-3
 
 This is because there are errors in the examples.
-In the example for the 2nd battle it says that "evens win" instead of "odds win"
-And in the 3rd battle 17 is represented as 10111 in binary instead of 10001
+In the example for the 2nd battle it says that "evens win" instead of "odds win".
+And in the 3rd battle 17 is represented as 10111 in binary instead of 10001.
