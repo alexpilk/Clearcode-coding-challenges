@@ -22,6 +22,9 @@ print(battle([21,-3,20]))
 print(battle([7,-3,-14,6]))
 print(battle([17,-3, 32, -24]))
 
+# Example of a tie
+print(battle([23,-3, 32, -24]))
+
 # Please note that the results of this script are different from the ones in 
 # the examples in the task description.
 
