@@ -1,11 +1,24 @@
 def battle(battlefield):
+    """
+    Computes the points for odd and even numbers.
+
+    Args: 
+        battlefield: list of soldiers in the battlefield.
+    Returns: 
+        string with results ("Evens win", "Odds win" or "Tie")
+    """
+    
     print("_________________________________")
     print("Battle {0} begins!".format(battlefield))
     score = [0,0]
     for soldier in battlefield:
+        if soldier == 0:
+            continue
         soldier_type = soldier % 2 # 0 means even, 1 means odd
-        if soldier_type == 1: print('Odd {0:b}'.format(soldier)) 
-        else: print('Even {0:b}'.format(soldier))
+        if soldier_type == 1: 
+            print('Odd {0:b}'.format(soldier)) 
+        else: 
+            print('Even {0:b}'.format(soldier))
         for bit in '{0:b}'.format(soldier):
             if bit == str(soldier_type):
                 score[soldier_type] += 1 * soldier / abs(soldier) 
@@ -25,6 +38,9 @@ print(battle([17,-3, 32, -24]))
 # Example of a tie
 print(battle([23,-3, 32, -24]))
 
+# Support for zeros
+print(battle([0,-3, 32, -24]))
+
 # Please note that the results of this script are different from the ones in 
 # the examples in the task description.
 
@@ -41,3 +57,4 @@ print(battle([23,-3, 32, -24]))
 # This is because there are errors in the examples.
 # In the example for the 2nd battle it says that "evens win" instead of "odds win"
 # And in the 3rd battle 17 is represented as 10111 in binary instead of 10001
+
