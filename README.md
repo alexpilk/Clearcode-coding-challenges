@@ -17,3 +17,10 @@ Whereas the script returns:
 This is because there are errors in the examples.
 In the example for the 2nd battle it says that "evens win" instead of "odds win".
 And in the 3rd battle 17 is represented as 10111 in binary instead of 10001.
+
+# Solutions explained
+## Task 1:
+Function `battle()` accepts a list of soldiers. Then for every soldier in the battlefield it:
+* checks whether the soldier is even or odd (using % 2)
+* converts soldier number to binary
+* for each bit corresponding to the soldier's type it increments the score (or decrements it, the sign is computed by multiplying the value by `soldier / abs(soldier)`, which equals 1 if soldier is greater than 0 and if soldier is less than 0 it equals -1)
