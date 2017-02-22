@@ -2,6 +2,8 @@
 # It's not a perfect solution either,
 # since it takes 7.4 seconds on my machine to check a 17x17 terrain.
 # But it's still much faster than the previous solution using itertools.
+# Run this script from terminal/cmd by typing
+# python minimum_effort_recursive.py "file_with_terrain.txt"
 
 import sys
 
